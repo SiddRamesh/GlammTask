@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E2F685A2431C74B007ABA54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2F68592431C74B007ABA54 /* SceneDelegate.swift */; };
+		5E2F685F2431C74B007ABA54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2F685D2431C74B007ABA54 /* Main.storyboard */; };
+		5E2F68612431C74D007ABA54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E2F68602431C74D007ABA54 /* Assets.xcassets */; };
+		5E2F68642431C74D007ABA54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E2F68622431C74D007ABA54 /* LaunchScreen.storyboard */; };
+		5E2F686F2431C74D007ABA54 /* GlammTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2F686E2431C74D007ABA54 /* GlammTaskTests.swift */; };
+		5E2F687A2431C74D007ABA54 /* GlammTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2F68792431C74D007ABA54 /* GlammTaskUITests.swift */; };
+		5EDF6D452431C9FB008B445F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D2A2431C9FA008B445F /* AppDelegate.swift */; };
+		5EDF6D462431C9FB008B445F /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D2D2431C9FA008B445F /* AppConstants.swift */; };
+		5EDF6D472431C9FB008B445F /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D2F2431C9FA008B445F /* AppUtils.swift */; };
+		5EDF6D482431C9FB008B445F /* AppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D312431C9FA008B445F /* AppExtensions.swift */; };
+		5EDF6D492431C9FB008B445F /* RestaurantListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D342431C9FB008B445F /* RestaurantListViewModel.swift */; };
+		5EDF6D4A2431C9FB008B445F /* LocationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D352431C9FB008B445F /* LocationListViewModel.swift */; };
+		5EDF6D4B2431C9FB008B445F /* RestaurantsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D372431C9FB008B445F /* RestaurantsData.swift */; };
+		5EDF6D4C2431C9FB008B445F /* CityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D382431C9FB008B445F /* CityData.swift */; };
+		5EDF6D4D2431C9FB008B445F /* ResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D392431C9FB008B445F /* ResponseData.swift */; };
+		5EDF6D4E2431C9FB008B445F /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D3C2431C9FB008B445F /* LocationListView.swift */; };
+		5EDF6D4F2431C9FB008B445F /* RestaurantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D3D2431C9FB008B445F /* RestaurantListView.swift */; };
+		5EDF6D502431C9FB008B445F /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D3F2431C9FB008B445F /* LocationCell.swift */; };
+		5EDF6D512431C9FB008B445F /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D402431C9FB008B445F /* RestaurantCell.swift */; };
+		5EDF6D522431C9FB008B445F /* APIParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D422431C9FB008B445F /* APIParser.swift */; };
+		5EDF6D532431C9FB008B445F /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D432431C9FB008B445F /* APIError.swift */; };
+		5EDF6D542431C9FB008B445F /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D442431C9FB008B445F /* APIConstants.swift */; };
+		5EDF6D562431CC69008B445F /* APIParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDF6D552431CC69008B445F /* APIParserTest.swift */; };
+		5EDF6E322431CDB7008B445F /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF6E2F2431CD6E008B445F /* SDWebImage.framework */; };
+		5EDF6E332431CDB7008B445F /* SDWebImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5EDF6E2F2431CD6E008B445F /* SDWebImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E2F686B2431C74D007ABA54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E2F684C2431C74B007ABA54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E2F68532431C74B007ABA54;
+			remoteInfo = GlammTask;
+		};
+		5E2F68762431C74D007ABA54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E2F684C2431C74B007ABA54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E2F68532431C74B007ABA54;
+			remoteInfo = GlammTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5EDF6E342431CDB7008B445F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5EDF6E332431CDB7008B445F /* SDWebImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5E2F68542431C74B007ABA54 /* GlammTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlammTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E2F68592431C74B007ABA54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5E2F685E2431C74B007ABA54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E2F68602431C74D007ABA54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E2F68632431C74D007ABA54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E2F68652431C74D007ABA54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E2F686A2431C74D007ABA54 /* GlammTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlammTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E2F686E2431C74D007ABA54 /* GlammTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlammTaskTests.swift; sourceTree = "<group>"; };
+		5E2F68702431C74D007ABA54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E2F68752431C74D007ABA54 /* GlammTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlammTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E2F68792431C74D007ABA54 /* GlammTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlammTaskUITests.swift; sourceTree = "<group>"; };
+		5E2F687B2431C74D007ABA54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EDF6D2A2431C9FA008B445F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5EDF6D2D2431C9FA008B445F /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		5EDF6D2F2431C9FA008B445F /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		5EDF6D312431C9FA008B445F /* AppExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppExtensions.swift; sourceTree = "<group>"; };
+		5EDF6D342431C9FB008B445F /* RestaurantListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListViewModel.swift; sourceTree = "<group>"; };
+		5EDF6D352431C9FB008B445F /* LocationListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationListViewModel.swift; sourceTree = "<group>"; };
+		5EDF6D372431C9FB008B445F /* RestaurantsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantsData.swift; sourceTree = "<group>"; };
+		5EDF6D382431C9FB008B445F /* CityData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityData.swift; sourceTree = "<group>"; };
+		5EDF6D392431C9FB008B445F /* ResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseData.swift; sourceTree = "<group>"; };
+		5EDF6D3C2431C9FB008B445F /* LocationListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		5EDF6D3D2431C9FB008B445F /* RestaurantListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantListView.swift; sourceTree = "<group>"; };
+		5EDF6D3F2431C9FB008B445F /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		5EDF6D402431C9FB008B445F /* RestaurantCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		5EDF6D422431C9FB008B445F /* APIParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIParser.swift; sourceTree = "<group>"; };
+		5EDF6D432431C9FB008B445F /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		5EDF6D442431C9FB008B445F /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		5EDF6D552431CC69008B445F /* APIParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIParserTest.swift; sourceTree = "<group>"; };
+		5EDF6E2F2431CD6E008B445F /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E2F68512431C74B007ABA54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EDF6E322431CDB7008B445F /* SDWebImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E2F68672431C74D007ABA54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E2F68722431C74D007ABA54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E2F684B2431C74B007ABA54 = {
+			isa = PBXGroup;
+			children = (
+				5EDF6E2F2431CD6E008B445F /* SDWebImage.framework */,
+				5E2F68562431C74B007ABA54 /* GlammTask */,
+				5E2F686D2431C74D007ABA54 /* GlammTaskTests */,
+				5E2F68782431C74D007ABA54 /* GlammTaskUITests */,
+				5E2F68552431C74B007ABA54 /* Products */,
+				5EDF6E312431CDB7008B445F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5E2F68552431C74B007ABA54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E2F68542431C74B007ABA54 /* GlammTask.app */,
+				5E2F686A2431C74D007ABA54 /* GlammTaskTests.xctest */,
+				5E2F68752431C74D007ABA54 /* GlammTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E2F68562431C74B007ABA54 /* GlammTask */ = {
+			isa = PBXGroup;
+			children = (
+				5E2F68592431C74B007ABA54 /* SceneDelegate.swift */,
+				5EDF6D2B2431C9FA008B445F /* Common */,
+				5EDF6D292431C9FA008B445F /* Delegate */,
+				5EDF6D412431C9FB008B445F /* NetworkAPIs */,
+				5EDF6D322431C9FA008B445F /* Structure */,
+				5E2F685D2431C74B007ABA54 /* Main.storyboard */,
+				5E2F68602431C74D007ABA54 /* Assets.xcassets */,
+				5E2F68622431C74D007ABA54 /* LaunchScreen.storyboard */,
+				5E2F68652431C74D007ABA54 /* Info.plist */,
+			);
+			path = GlammTask;
+			sourceTree = "<group>";
+		};
+		5E2F686D2431C74D007ABA54 /* GlammTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E2F686E2431C74D007ABA54 /* GlammTaskTests.swift */,
+				5EDF6D552431CC69008B445F /* APIParserTest.swift */,
+				5E2F68702431C74D007ABA54 /* Info.plist */,
+			);
+			path = GlammTaskTests;
+			sourceTree = "<group>";
+		};
+		5E2F68782431C74D007ABA54 /* GlammTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5E2F68792431C74D007ABA54 /* GlammTaskUITests.swift */,
+				5E2F687B2431C74D007ABA54 /* Info.plist */,
+			);
+			path = GlammTaskUITests;
+			sourceTree = "<group>";
+		};
+		5EDF6D292431C9FA008B445F /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				5EDF6D2A2431C9FA008B445F /* AppDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		5EDF6D2B2431C9FA008B445F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5EDF6D2C2431C9FA008B445F /* Constants */,
+				5EDF6D2E2431C9FA008B445F /* Utils */,
+				5EDF6D302431C9FA008B445F /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5EDF6D2C2431C9FA008B445F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				5EDF6D2D2431C9FA008B445F /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		5EDF6D2E2431C9FA008B445F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5EDF6D2F2431C9FA008B445F /* AppUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5EDF6D302431C9FA008B445F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5EDF6D312431C9FA008B445F /* AppExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5EDF6D322431C9FA008B445F /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				5EDF6D332431C9FA008B445F /* ViewModel */,
+				5EDF6D362431C9FB008B445F /* Model */,
+				5EDF6D3A2431C9FB008B445F /* View */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		5EDF6D332431C9FA008B445F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5EDF6D342431C9FB008B445F /* RestaurantListViewModel.swift */,
+				5EDF6D352431C9FB008B445F /* LocationListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5EDF6D362431C9FB008B445F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5EDF6D372431C9FB008B445F /* RestaurantsData.swift */,
+				5EDF6D382431C9FB008B445F /* CityData.swift */,
+				5EDF6D392431C9FB008B445F /* ResponseData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5EDF6D3A2431C9FB008B445F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5EDF6D3B2431C9FB008B445F /* Controllers */,
+				5EDF6D3E2431C9FB008B445F /* CustomCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5EDF6D3B2431C9FB008B445F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5EDF6D3C2431C9FB008B445F /* LocationListView.swift */,
+				5EDF6D3D2431C9FB008B445F /* RestaurantListView.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5EDF6D3E2431C9FB008B445F /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				5EDF6D3F2431C9FB008B445F /* LocationCell.swift */,
+				5EDF6D402431C9FB008B445F /* RestaurantCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		5EDF6D412431C9FB008B445F /* NetworkAPIs */ = {
+			isa = PBXGroup;
+			children = (
+				5EDF6D422431C9FB008B445F /* APIParser.swift */,
+				5EDF6D432431C9FB008B445F /* APIError.swift */,
+				5EDF6D442431C9FB008B445F /* APIConstants.swift */,
+			);
+			path = NetworkAPIs;
+			sourceTree = "<group>";
+		};
+		5EDF6E312431CDB7008B445F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E2F68532431C74B007ABA54 /* GlammTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E2F687E2431C74D007ABA54 /* Build configuration list for PBXNativeTarget "GlammTask" */;
+			buildPhases = (
+				5E2F68502431C74B007ABA54 /* Sources */,
+				5E2F68512431C74B007ABA54 /* Frameworks */,
+				5E2F68522431C74B007ABA54 /* Resources */,
+				5EDF6E342431CDB7008B445F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlammTask;
+			productName = GlammTask;
+			productReference = 5E2F68542431C74B007ABA54 /* GlammTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E2F68692431C74D007ABA54 /* GlammTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E2F68812431C74D007ABA54 /* Build configuration list for PBXNativeTarget "GlammTaskTests" */;
+			buildPhases = (
+				5E2F68662431C74D007ABA54 /* Sources */,
+				5E2F68672431C74D007ABA54 /* Frameworks */,
+				5E2F68682431C74D007ABA54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E2F686C2431C74D007ABA54 /* PBXTargetDependency */,
+			);
+			name = GlammTaskTests;
+			productName = GlammTaskTests;
+			productReference = 5E2F686A2431C74D007ABA54 /* GlammTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5E2F68742431C74D007ABA54 /* GlammTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E2F68842431C74D007ABA54 /* Build configuration list for PBXNativeTarget "GlammTaskUITests" */;
+			buildPhases = (
+				5E2F68712431C74D007ABA54 /* Sources */,
+				5E2F68722431C74D007ABA54 /* Frameworks */,
+				5E2F68732431C74D007ABA54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E2F68772431C74D007ABA54 /* PBXTargetDependency */,
+			);
+			name = GlammTaskUITests;
+			productName = GlammTaskUITests;
+			productReference = 5E2F68752431C74D007ABA54 /* GlammTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E2F684C2431C74B007ABA54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Ramesh Siddanavar";
+				TargetAttributes = {
+					5E2F68532431C74B007ABA54 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					5E2F68692431C74D007ABA54 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 5E2F68532431C74B007ABA54;
+					};
+					5E2F68742431C74D007ABA54 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 5E2F68532431C74B007ABA54;
+					};
+				};
+			};
+			buildConfigurationList = 5E2F684F2431C74B007ABA54 /* Build configuration list for PBXProject "GlammTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E2F684B2431C74B007ABA54;
+			productRefGroup = 5E2F68552431C74B007ABA54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E2F68532431C74B007ABA54 /* GlammTask */,
+				5E2F68692431C74D007ABA54 /* GlammTaskTests */,
+				5E2F68742431C74D007ABA54 /* GlammTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E2F68522431C74B007ABA54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2F68642431C74D007ABA54 /* LaunchScreen.storyboard in Resources */,
+				5E2F68612431C74D007ABA54 /* Assets.xcassets in Resources */,
+				5E2F685F2431C74B007ABA54 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E2F68682431C74D007ABA54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E2F68732431C74D007ABA54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E2F68502431C74B007ABA54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EDF6D452431C9FB008B445F /* AppDelegate.swift in Sources */,
+				5EDF6D492431C9FB008B445F /* RestaurantListViewModel.swift in Sources */,
+				5EDF6D472431C9FB008B445F /* AppUtils.swift in Sources */,
+				5EDF6D542431C9FB008B445F /* APIConstants.swift in Sources */,
+				5EDF6D4A2431C9FB008B445F /* LocationListViewModel.swift in Sources */,
+				5EDF6D502431C9FB008B445F /* LocationCell.swift in Sources */,
+				5EDF6D4B2431C9FB008B445F /* RestaurantsData.swift in Sources */,
+				5EDF6D512431C9FB008B445F /* RestaurantCell.swift in Sources */,
+				5EDF6D4F2431C9FB008B445F /* RestaurantListView.swift in Sources */,
+				5E2F685A2431C74B007ABA54 /* SceneDelegate.swift in Sources */,
+				5EDF6D522431C9FB008B445F /* APIParser.swift in Sources */,
+				5EDF6D462431C9FB008B445F /* AppConstants.swift in Sources */,
+				5EDF6D482431C9FB008B445F /* AppExtensions.swift in Sources */,
+				5EDF6D4D2431C9FB008B445F /* ResponseData.swift in Sources */,
+				5EDF6D4E2431C9FB008B445F /* LocationListView.swift in Sources */,
+				5EDF6D4C2431C9FB008B445F /* CityData.swift in Sources */,
+				5EDF6D532431C9FB008B445F /* APIError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E2F68662431C74D007ABA54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2F686F2431C74D007ABA54 /* GlammTaskTests.swift in Sources */,
+				5EDF6D562431CC69008B445F /* APIParserTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E2F68712431C74D007ABA54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2F687A2431C74D007ABA54 /* GlammTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E2F686C2431C74D007ABA54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E2F68532431C74B007ABA54 /* GlammTask */;
+			targetProxy = 5E2F686B2431C74D007ABA54 /* PBXContainerItemProxy */;
+		};
+		5E2F68772431C74D007ABA54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E2F68532431C74B007ABA54 /* GlammTask */;
+			targetProxy = 5E2F68762431C74D007ABA54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E2F685D2431C74B007ABA54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E2F685E2431C74B007ABA54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E2F68622431C74D007ABA54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E2F68632431C74D007ABA54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E2F687C2431C74D007ABA54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5E2F687D2431C74D007ABA54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E2F687F2431C74D007ABA54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GB8EKR2A4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GlammTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Arckronix.GlammTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E2F68802431C74D007ABA54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GB8EKR2A4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GlammTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Arckronix.GlammTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5E2F68822431C74D007ABA54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GB8EKR2A4;
+				INFOPLIST_FILE = GlammTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Arckronix.GlammTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GlammTask.app/GlammTask";
+			};
+			name = Debug;
+		};
+		5E2F68832431C74D007ABA54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GB8EKR2A4;
+				INFOPLIST_FILE = GlammTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Arckronix.GlammTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GlammTask.app/GlammTask";
+			};
+			name = Release;
+		};
+		5E2F68852431C74D007ABA54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GB8EKR2A4;
+				INFOPLIST_FILE = GlammTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Arckronix.GlammTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GlammTask;
+			};
+			name = Debug;
+		};
+		5E2F68862431C74D007ABA54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9GB8EKR2A4;
+				INFOPLIST_FILE = GlammTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Arckronix.GlammTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GlammTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E2F684F2431C74B007ABA54 /* Build configuration list for PBXProject "GlammTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E2F687C2431C74D007ABA54 /* Debug */,
+				5E2F687D2431C74D007ABA54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E2F687E2431C74D007ABA54 /* Build configuration list for PBXNativeTarget "GlammTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E2F687F2431C74D007ABA54 /* Debug */,
+				5E2F68802431C74D007ABA54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E2F68812431C74D007ABA54 /* Build configuration list for PBXNativeTarget "GlammTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E2F68822431C74D007ABA54 /* Debug */,
+				5E2F68832431C74D007ABA54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E2F68842431C74D007ABA54 /* Build configuration list for PBXNativeTarget "GlammTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E2F68852431C74D007ABA54 /* Debug */,
+				5E2F68862431C74D007ABA54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E2F684C2431C74B007ABA54 /* Project object */;
+}

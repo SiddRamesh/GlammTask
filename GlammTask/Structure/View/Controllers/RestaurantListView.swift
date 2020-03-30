@@ -15,8 +15,8 @@ class RestaurantListView: UITableViewController {
     private var viewModel: RestaurantListViewModel = RestaurantListViewModel()
     
     var currentRecord = 1
-    var lastLatValue = 19.0760 //21.17
-    var lastLngValue = 72.8777 //72.83
+    var lastLatValue = 19.0760
+    var lastLngValue = 72.8777
     var isLoadingData = false
     var currCity = "Mumbai"
     
@@ -70,8 +70,8 @@ class RestaurantListView: UITableViewController {
         
         if let locationInfo = notification.userInfo?["user_location"] as? [String : Double] {
             
-            self.lastLatValue = locationInfo["lat"] ?? 19.0760 //21.17
-            self.lastLngValue = locationInfo["lng"] ?? 72.8777 //72.83
+            self.lastLatValue = locationInfo["lat"] ?? 19.0760
+            self.lastLngValue = locationInfo["lng"] ?? 72.8777
             self.fetchRestaurantsData(isFresh: true)
         }
     }
