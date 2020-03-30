@@ -101,6 +101,8 @@ extension AppDelegate: CLLocationManagerDelegate {
         case .authorizedAlways, .authorizedWhenInUse:
             self.getLocationForNearbyRestaurants()
             break
+        @unknown default:
+            print("Fatal error")
         }
         
         return
@@ -133,8 +135,8 @@ extension AppDelegate: CLLocationManagerDelegate {
         manager.stopUpdatingLocation()
         manager.delegate = nil
         
-        var latValue = 19.0760 //21.17
-        var lngValue = 72.8777 //72.83
+        var latValue = 19.0760 
+        var lngValue = 72.8777 
         
         if let lastLocation = manager.location {
             

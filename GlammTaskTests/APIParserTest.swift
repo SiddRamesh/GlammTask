@@ -22,7 +22,7 @@ class APIParserTest: XCTestCase {
     
     func testFetchWeatherAPI() {
         
-        let params = String(format: "lat=%.3f&lon=%.3f&entity_type=city&count=50", 21.17, 72.83)
+        let params = String(format: "lat=%.3f&lon=%.3f&entity_type=city&count=50", 19.0760,72.8777)
         
         let networking = APINetworking()
         networking.performNetworkRequest(reqEndpoint: APIConstants.restaurantsList(reqParams: params), type: AllRestaurantsData.self) { (status, response, error) in
@@ -35,7 +35,7 @@ class APIParserTest: XCTestCase {
     func testDictionaryWithPropertiesOfObject() {
         
         let id = "123"
-        let name = "Surat"
+        let name = "Mumbai"
         let dict = NSDictionary(dictionary: ["id": id, "name" : name])
         
         self.mapWithDictionary(dictionary: dict)

@@ -11,7 +11,7 @@ import UIKit
 struct APIServerConstants {
     
     static let serverBaseURL = URL(string: "https://developers.zomato.com/api/v2.1/")!
-    static let serverKey = "c7d18bcd59048a6ab4d840e4bd30554f"  //"7743aea88c2d4f753465c610ef1cf5a8"
+    static let serverKey = "c7d18bcd59048a6ab4d840e4bd30554f" 
     static let serverTimeout = 30.0
 }
 
